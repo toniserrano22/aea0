@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        1. Què és Vanilla Javascript?
+
+2. Diferència els ECMA Script que pertanyen a Javascript i a Javascript Modern.
+
+3. Qui va crear Javascript? De quina empresa era?
+
+4. Quina empresa hi ha actualment darrera de Javascript?
+
+5. Què és una arrow function? A quin ES apareix (quin any).
+
+6. Què és un callback? Posa un exemple.
+
+7. Què és una promesa en Javascript (promise). Posa un exemple. Explica també la diferència entre la programació síncrona i la programació asíncrona, posa un exemple.
+    -->
+    <h1>AEA 0. Preguntes GitHub Pages (URL pública GitHub Pages)</h1>
+    <br><br><br>
+    <h3>1. Què és Vanilla Javascript?</h3>
+    <p>Vanilla Javascript es com es coneix al llenguatge Javascript quan s'utilitza sense cap libreria o framework</p>
+    <br>
+    <h3>2. Diferència els ECMA Script que pertanyen a Javascript i a Javascript Modern.</h3>
+    <p></p>
+    <br>
+    <h3>3. Qui va crear Javascript? De quina empresa era?</h3>
+    <p>Brendan Eich. L'empresa Netscape Communications Corporation </p>
+    <br>
+    <h3>4. Quina empresa hi ha actualment darrera de Javascript?</h3>
+    <p>Mozilla Foundation</p>
+    <br>
+    <h3>  5. Què és una arrow function? A quin ES apareix (quin any).</h3>
+    <p>Son una nova forma de definir funcions i ha distintes variants de la sintaxis, elimina la palabra "function" i posa la fletxa. Apareix al ES6 l'any 2015 </p>
+    <br>
+    <h3>6. Què és un callback? Posa un exemple.</h3>
+    <p>Es una funció que se pasa a otra funció com un argument, que despres es invoca dintre de la funció externa para completar algun tipus de rutina o acció <br>
+        function saludar(nombre) { <br>
+            alert('Hola ' + nombre); <br>
+          } <br>
+          
+          function procesarEntradaUsuario(callback) { <br>
+            var nombre = prompt('Por favor ingresa tu nombre.'); <br>
+            callback(nombre);  <br>
+          } <br>
+          
+          procesarEntradaUsuario(saludar);
+    </p>
+    <br>
+    <h3>7. Què és una promesa en Javascript (promise). Posa un exemple. Explica també la diferència entre la programació síncrona i la programació asíncrona, posa un exemple.</h3>
+    <p>Una promesa es un objecte que representa la terminació o el fracas d'una operació asíncrona. Donat que la majoria de las personas consumen promises ja creades, aquesta guía explicara primer com comsumirles, y despres com crearles.
+        <br>function exitoCallback(resultado) { <br>
+            console.log("Archivo de audio disponible en la URL " + resultado); <br>
+          } <br><br>
+          
+          function falloCallback(error) { <br>
+            console.log("Error generando archivo de audio " + error); <br>
+          } <br><br>
+          
+          crearArchivoAudioAsync(audioConfig, exitoCallback, falloCallback); <br>
+          En la comunicació asincrònica, no hi ha coincidència temporal entre emissor i receptor. En canvi, en la comunicació sincrònica, la coincidència temporal ha d'existir perquè es produeixi la comunicació (es transmeti el missatge).
+    </p>
+</body>
+</html>
